@@ -1,0 +1,30 @@
+
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+@import "tailwindcss";
+
+html, body {
+  scroll-behavior: smooth;
+}
+.button-glow {
+  transition: box-shadow .35s ease, transform .18s ease;
+}
+.button-glow:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(207,175,110,0.12);
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  transition: transform .35s cubic-bezier(.2,.9,.3,1);
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
