@@ -2,26 +2,30 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
+import custom from "/custom.jpeg"
+import ecommerce from '/ecommerce.jpeg'
+import dashboard from "/d.jpg"
+import business from "/business.jpeg"
 
 const portfolioItems = [
   {
     title: "Custom Website",
-    img: "/custom.jpeg",
+    img: custom,
     desc: "Fully responsive custom website built with React & TailwindCSS.",
   },
   {
     title: "E-Commerce Store",
-    img: "/ecommerce.jpeg",
+    img: ecommerce,
     desc: "Online store with payment gateway & product management.",
   },
   {
     title: "Web App Dashboard",
-    img: "https://source.unsplash.com/800x600/?dashboard,webapp",
+    img: dashboard,
     desc: "Interactive dashboard for managing business analytics and data.",
   },
   {
     title: "WordPress Business Site",
-    img: "https://source.unsplash.com/800x600/?wordpress,website",
+    img: business,
     desc: "Professional business website powered by WordPress.",
   },
 ];

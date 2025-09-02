@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
+import logo2 from "/logo4.png"  
+
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  // const navigate =useNavigate()
+  
 
   const menuItems = [
     { name: "Home", link: "#home" },
@@ -17,23 +22,29 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full top-0 z-50 bg-[#002B20] text-[#FFD700] shadow-lg">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-        {/* Logo */}
-        <a href="#home" className="text-2xl font-bold">Web Nectar</a>
+       <div className="w-45 "> 
+         <img
+          id="hero"
+          src={logo2}
+          alt="Logo"
+          className=" cursor-pointer hover:scale-110 duration-300"
 
-        {/* Desktop Menu */}
+         
+        />
+       </div>
+
         <div className="hidden md:flex gap-6">
           {menuItems.map((item) => (
             <a
               key={item.name}
               href={item.link}
-              className="hover:text-yellow-400 transition"
+              className="hover:text-yellow-400 transition text-[18px]  hover:underline duration-300 "
             >
               {item.name}
             </a>
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -41,7 +52,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

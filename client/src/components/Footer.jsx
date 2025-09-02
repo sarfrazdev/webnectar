@@ -2,6 +2,9 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+import logo2 from "/logo4.png"  
+
+
 const Footer = () => {
   return (
     <footer className="bg-[#001F16] text-[#FFD700] py-10 ">
@@ -13,7 +16,15 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl font-bold">Web Nectar</h2>
+      
+                  <img
+                    id="hero"
+                    src={logo2}
+                    alt="Logo"
+                    className=" cursor-pointer hover:scale-110 duration-300 h-20 w-auto"
+
+                   />
+                 
           <p className="mt-3 text-sm text-[#FFD700]/80">
             Crafting modern websites that convert visitors into clients.
           </p>
@@ -41,7 +52,7 @@ const Footer = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <h3 className="text-xl font-semibold mb-3">Get in Touch</h3>
-          <p className="text-sm">📧 support@webnectar.com</p>
+          <p className="text-sm">support@webnectar.com</p>
           <p className="text-sm">📍 Bihar Patna, India</p>
 
           <div className="flex space-x-4 mt-4">

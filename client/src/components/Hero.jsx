@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-gradient-to-br from-[#002B20] via-[#013322] to-[#002B20] text-[#FFD700]">
+    <section id="hero" className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-gradient-to-br from-[#002B20] via-[#013322] to-[#002B20] text-[#FFD700]">
       
       {/* Animated Background Shape */}
       <motion.div

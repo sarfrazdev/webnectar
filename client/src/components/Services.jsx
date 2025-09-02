@@ -1,34 +1,34 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaCode, FaWordpress, FaSearch, FaMobileAlt } from "react-icons/fa";
+import { FaCode, FaWordpress, FaMobileAlt } from "react-icons/fa";
+import customWebsiteImg from "/customWebsite.jpeg";
+import wordpressImg from "/wordpress.jpeg";
+import maintenanceImg from "/maintenance.jpeg";
+import mobileImg from "/mobile.jpeg";
 
 const services = [
   {
     title: "Custom Website Development",
     icon: <FaCode size={40} />,
-    img: "/customWebsite.jpeg",
-    // price: "₹15,000 - ₹50,000",
+    img: customWebsiteImg,
     desc: "Responsive, fast, and SEO-friendly websites built with React, TailwindCSS, and modern tools.",
   },
   {
     title: "WordPress Design & Development",
     icon: <FaWordpress size={40} />,
-    img: "/wordpress.jpeg",
-    // price: "₹10,000 - ₹40,000",
+    img: wordpressImg,
     desc: "Custom WordPress themes, plugins, and complete business websites.",
   },
   {
     title: "Website Maintenance & Support",
     icon: <FaCode size={40} />,
-    img: "/maintenance.jpeg",
-    // price: "₹5,000 - ₹20,000",
+    img: maintenanceImg,
     desc: "Ongoing website updates, security monitoring, and technical support to keep your site running smoothly.",
   },
   {
     title: "Mobile-Friendly Web Apps",
     icon: <FaMobileAlt size={40} />,
-    img: "/mobile.jpeg",
-    // price: "₹20,000 - ₹60,000",
+    img: mobileImg,
     desc: "Progressive web apps that feel like native mobile apps.",
   },
 ];

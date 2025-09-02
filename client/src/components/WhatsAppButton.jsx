@@ -14,4 +14,4 @@ return (
 );
 };
 
-export default WhatsAppButton;
+export default WhatsAppButton
