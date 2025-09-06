@@ -34,7 +34,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-[#013322] text-[#FFD700]">
+    <section id="contact" className="py-16  text-[#FFD700]">
     
       <Toaster position="top-center" reverseOrder={false} />
 
@@ -51,7 +51,7 @@ const ContactForm = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="bg-[#002B20] p-6 rounded-lg shadow-lg space-y-4"
+          className="p-6 rounded-lg shadow-lg space-y-4"
         >
           <input
             type="text"

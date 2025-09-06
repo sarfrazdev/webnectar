@@ -22,6 +22,8 @@ const Footer = () => {
                     src={logo2}
                     alt="Logo"
                     className=" cursor-pointer hover:scale-110 duration-300 h-20 w-auto"
+          
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
 
                    />
                  

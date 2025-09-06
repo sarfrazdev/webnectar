@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Excel to Graph Converter",
     img: p4,
-    link: "https://excel-to-graph-converter.netlify.app/login",
+    link: "https://excel-to-graph-converter.netlify.app",
   },
   {
     title: "Restaurant Website",
@@ -36,7 +36,7 @@ const projects = [
   {
     title: "Expense Tracker",
     img: p6,
-    link: "https://expneseetracker.netlify.app/login",
+    link: "https://expneseetracker.netlify.app",
   },
 ];
 

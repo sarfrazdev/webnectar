@@ -4,17 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-gradient-to-br from-[#002B20] via-[#013322] to-[#002B20] text-[#FFD700]">
-      
-      {/* Animated Background Shape */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 0.2, scale: 1 }}
-        transition={{ duration: 5, repeat: Infinity, repeatType: "mirror" }}
-        className="absolute w-96 h-96 bg-[#FFD700] rounded-full blur-3xl top-10 left-10"
-      />
-
-      <motion.h1
+    <section id="hero" className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-gradient-to-br from-[#002B20] via-[#013322] to-[#002B20] text-[#FFD700]">      <motion.h1
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}

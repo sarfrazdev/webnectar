@@ -43,7 +43,7 @@ const ProcessTimeline = () => {
           Our Process
         </motion.h2>
 
-        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-8">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-8 relative">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -57,13 +57,12 @@ const ProcessTimeline = () => {
               </div>
               <h3 className="text-lg font-semibold">{step.title}</h3>
               <p className="text-sm mt-2">{step.desc}</p>
-
-              {/* Connector Line for Desktop */}
-              {index !== steps.length - 1 && (
-                <div className="hidden md:block absolute top-6 left-full w-full h-1 bg-yellow-400"></div>
-              )}
             </motion.div>
           ))}
+
+          {/* Connector Line for Desktop */}
+          <div className="hidden md:block absolute top-10 left-0 right-0 h-1 bg-yellow-400 z-0" 
+          ></div>
         </div>
       </div>
     </section>
