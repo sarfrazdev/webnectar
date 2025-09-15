@@ -6,6 +6,7 @@ import p3 from "/p3.png";
 import p4 from "/p4.png";
 import p5 from "/p5.png";
 import p6 from "/p6.png";
+import p7 from "/hospital.png"
 
 const projects = [
   {
@@ -38,6 +39,12 @@ const projects = [
     img: p6,
     link: "https://expneseetracker.netlify.app",
   },
+   {
+    title: "Hospital management system",
+    img: p7,
+    link: "https://docfinder-schedule.lovable.app/",
+  },
+  
 ];
 
 const PortfolioCarousel = () => {

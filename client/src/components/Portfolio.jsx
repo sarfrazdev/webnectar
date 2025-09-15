@@ -10,6 +10,7 @@ const portfolioItems = [
   { title: "Real Estate", icon: "🏠", desc: "Modern property management" },
   { title: "Food & Beverage", icon: "🍔", desc: "Interactive menus & ordering" },
   { title: "Fitness & Sports", icon: "🏋️", desc: "Personalized training tools" },
+  
 ];
 
 const containerVariants = {
